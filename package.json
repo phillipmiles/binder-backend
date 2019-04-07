@@ -1,0 +1,38 @@
+{
+  "name": "binder-backend",
+  "version": "1.0.0",
+  "description": "Backend for the binder webapp.",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "@teamwork/websocket-json-stream": "^2.0.0",
+    "argon2": "^0.21.0",
+    "bcrypt": "^3.0.5",
+    "connect-session-sequelize": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "helmet": "^3.16.0",
+    "jsonwebtoken": "^8.5.0",
+    "mongodb": "^3.1.13",
+    "mysql2": "^1.6.5",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "rich-text": "^3.1.0",
+    "sequelize": "^4.38.0",
+    "sequelize-cli": "^5.4.0",
+    "sharedb": "^1.0.0-beta.20",
+    "sharedb-mongo": "^1.0.0-beta.8",
+    "ws": "^6.2.0"
+  }
+}

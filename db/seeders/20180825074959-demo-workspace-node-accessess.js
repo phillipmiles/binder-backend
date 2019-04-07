@@ -1,0 +1,252 @@
+'use strict';
+
+module.exports = {
+    up: (queryInterface, Sequelize) => {
+        /*
+        Add altering commands here.
+        Return a promise to correctly handle asynchronicity.
+
+        Example:
+        return queryInterface.bulkInsert('Person', [{
+            name: 'John Doe',
+            isBetaMember: false
+        }], {});
+        */
+
+        return queryInterface.bulkInsert('Workspace_node_accesses', [{
+
+            // =======
+            // USER #1
+            // =======
+            node_id: '053361e5-2ed4-4418-b55a-4e89b858c746',   // Root lvl #1
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {  
+            node_id: '1fde1a80-9e84-47e7-bf63-4f25ba7d073a',   // Bin lvl #1
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {  
+            node_id: '8c789d2a-becd-4f33-9499-b0bbc0a572ee',    // Workspace #1
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   
+            node_id: 'aa01c3b0-a0cf-45ac-9ba7-55836036fd8f',    // Subspace #1
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   
+            node_id: '43ea0806-9217-4798-8f2c-9367ddea22d0',    // Subspace #2
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   
+            node_id: '000cf8b9-bc0e-40a1-abca-b4eb4f4a7218',    // Subspace #3
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   
+            node_id: 'f01e3b66-8751-46f4-a9f3-487cd092c16b',    // Subspace #4
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   // Subspace
+            node_id: 'ef66aa68-0b22-4b1f-aa31-6123e17ce1ad',
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   // Document
+            node_id: 'ed5bb442-8478-4c5c-86c0-89f76285cb2f',
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   
+            node_id: '65f91ad6-0f8f-43ff-a447-786bbfd35e73',    // Document #2
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   // Document
+            node_id: '42b6b388-57f9-4c19-a723-00f45504f58d',    // Document #3
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'binned',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   // Document
+            node_id: '6ead121a-1054-4dd7-a991-97673ec92ec2',
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   // Document
+            node_id: '8a331d32-975f-4c4e-ae74-1e6644dfcdc8',
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   // Document
+            node_id: '04f4e35f-934d-4691-8aa8-c9dc740f6844',
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   // Document
+            node_id: '693de16a-df99-46e3-8afc-cc6ae5e99037',
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {         // Document
+            node_id: '2646c963-6701-45a4-86d3-7236bc1dc5b0',
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   // Document
+            node_id: '76772211-ce30-4715-91f8-a0372d0f8cb1',
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   // Document
+            node_id: 'd6407f19-2975-4cc2-baf7-a4a2a58c7ea6',
+            user_id: '73ebadf2-49c2-4b05-8fad-66e49cabccf0',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+
+
+
+
+        }, {
+        // =======
+        // USER #2
+        // =======
+            node_id: 'e4c6e98c-c264-457f-a922-3e5439cde892',   // Root lvl #2
+            user_id: '23feadg1-32f4-5b22-4fad-63e40cabaaa1',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {
+            node_id: 'a5a7d8bf-ecff-40aa-b90c-8140d4a134da',   // Bin lvl #2
+            user_id: '23feadg1-32f4-5b22-4fad-63e40cabaaa1',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   
+            node_id: '53a3d3c8-9a83-41fb-a259-af259799e9cc',    // Workspace #2
+            user_id: '23feadg1-32f4-5b22-4fad-63e40cabaaa1',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {       
+            node_id: '43ea0806-9217-4798-8f2c-9367ddea22d0',    // Subspace #2
+            user_id: '23feadg1-32f4-5b22-4fad-63e40cabaaa1',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   
+            node_id: '0caf454c-ae3f-40bf-98ab-05e760324761',    // Workspace #3
+            user_id: '23feadg1-32f4-5b22-4fad-63e40cabaaa1',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {   
+            node_id: '65f91ad6-0f8f-43ff-a447-786bbfd35e73',    // Document #2
+            user_id: '23feadg1-32f4-5b22-4fad-63e40cabaaa1',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        // =======
+        // USER #3
+        // =======
+        }, {
+            node_id: '3dda10b0-85c6-4278-9921-990337b71c34',   // Root lvl #3
+            user_id: '312b1a65-38c1-43a6-b895-d1569277b71e',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {
+            node_id: '850056d5-9b90-4d40-9f47-03837c775d59',   // Bin lvl #3
+            user_id: '312b1a65-38c1-43a6-b895-d1569277b71e',
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {       
+            node_id: '0caf454c-ae3f-40bf-98ab-05e760324761',    // Workspace #3
+            user_id: '312b1a65-38c1-43a6-b895-d1569277b71e',    // User #3
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+
+            
+        // =======
+        // USER #4
+        // =======
+        }, {
+            node_id: '6812159d-496f-4d6f-bda4-507b870a38ad',    // Root lvl #4
+            user_id: '3be2e1db-7742-4a99-83d3-a8bdf91b37d4',    // User #4
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {
+            node_id: '20be11c5-bebe-476b-9ea8-15f83e6ed80b',    // Bin lvl #4
+            user_id: '3be2e1db-7742-4a99-83d3-a8bdf91b37d4',   
+            type: 'write',
+            status: 'active',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }], {});
+    },
+
+    down: (queryInterface, Sequelize) => {
+        /*
+        Add reverting commands here.
+        Return a promise to correctly handle asynchronicity.
+
+        Example:
+        return queryInterface.bulkDelete('Person', null, {});
+        */
+
+        return queryInterface.bulkDelete('Workspace_node_accesses', null, {});
+    }
+};
