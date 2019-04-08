@@ -1,5 +1,4 @@
 /** server/controllers/article.ctrl.js*/
-// const User = require('./../models/User');
 var models  = require('../models');
 var tokenStore  = require('../services/token_store.js');
 const mailer  = require('../services/mailer.js');

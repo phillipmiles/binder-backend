@@ -1,7 +1,4 @@
 /** server/controllers/article.ctrl.js*/
-// const Workspace = require('./../models/Workspace');
-// const User = require('./../models/User')
-
 var models  = require('../models');
 require('../helpers/error');
 
